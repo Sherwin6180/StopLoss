@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateActivity">
+
+    <Button
+        android:id="@+id/button_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:text="Confirm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_shares"
+        android:layout_width="209dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:hint="Your Initial Shares"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editText_initial_amount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_initial_amount"
+        android:layout_width="168dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="37dp"
+        android:ems="10"
+        android:hint="initial trade amount"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editText_second_amount"
+        app:layout_constraintEnd_toStartOf="@+id/editText_price"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_shares" />
+
+    <EditText
+        android:id="@+id/editText_price"
+        android:layout_width="157dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginBottom="121dp"
+        android:ems="10"
+        android:hint="price"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editText_second_sale_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editText_initial_amount"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_second_amount"
+        android:layout_width="299dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="38dp"
+        android:ems="10"
+        android:hint="trade amount at second purchase"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editText_second_purchase_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_initial_amount" />
+
+    <EditText
+        android:id="@+id/editText_second_purchase_price"
+        android:layout_width="209dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="310dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="36dp"
+        android:ems="10"
+        android:hint="price at second purchase"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editText_ticker_name"
+        app:layout_constraintEnd_toStartOf="@+id/editText_second_sale_price"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_second_sale_price"
+        android:layout_width="180dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="313dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:hint="price at second sale"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editText_target"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editText_second_purchase_price"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_ticker_name"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="137dp"
+        android:ems="10"
+        android:hint="ticker name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editText_target"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_second_purchase_price" />
+
+    <EditText
+        android:id="@+id/editText_target"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="137dp"
+        android:ems="10"
+        android:hint="target(%)"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editText_ticker_name"
+        app:layout_constraintTop_toBottomOf="@+id/editText_second_sale_price" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
